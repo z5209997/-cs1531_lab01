@@ -1,8 +1,10 @@
 strings = ['This', 'list', 'is', 'now', 'all', 'together']
 sentence = ''
 for i in strings:
-	sentence = sentence + i + " "
-
+	if i != 'together':
+		sentence =sentence +  i + " "
+	else:
+		sentence += i
 print(sentence)
 print(' '.join(strings))
 
